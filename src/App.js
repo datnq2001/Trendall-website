@@ -1,5 +1,11 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import logo from "./logo.svg";
 import './App.css';
+
+import HomePage from './routes/HomePage';
+import GridViewPage from './routes/GridViewPage';
+import DetailsPage from './routes/DetailsPage';
 
 function App() {
   return (
