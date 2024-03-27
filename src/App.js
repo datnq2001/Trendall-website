@@ -7,8 +7,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import HomePage from "./pages/HomePage";
-import GridViewPage from "./pages/GridViewPage";
-import
+import ListItemDetailsPage from "./pages/ListItemDetailsPage"; // Import the missing component
+import NotFoundPage from "./pages/NotFoundPage"; // Import the missing component
+
 
 function App() {
   return (
