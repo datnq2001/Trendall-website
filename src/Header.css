@@ -1,0 +1,13 @@
+/* Global styles for the Navbar component */
+.navbar-light {
+    background-color: #f8f9fa !important;
+    .navbar-brand {
+    color: #0d6efd !important;
+    }
+    }
+    
+    .navbar-nav .nav-link,
+    .navbar-nav .nav-item .dropdown-toggle {
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: #4b5563;}
