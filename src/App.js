@@ -1,32 +1,23 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Container } from "react-bootstrap";
+import React from "react";
+import { render } from "react-dom";
+import WebRouter from "./WebRouter";
 
-import "./App.css";
-
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-
-import HomePage from "./pages/HomePage";
-import ListItemDetailsPage from "./pages/ListItemDetailsPage"; // Import the missing component
-import NotFoundPage from "./pages/NotFoundPage"; // Import the missing component
-
-
-function App() {
-  return (
-    <Router>
-    <Container fluid>
-    <Header />
-    <Routes>
-    <Route path="/" element={<HomePage/>} />
-    <Route path="/gridview" element={<GridViewPage />} />
-    <Route path="/listitem/:id" element={<ListItemDetailsPage />} />
-    <Route path="*"element={<NotFoundPage />} />
-    </Routes>
-    <Footer />
-    </Container>
-    </Router>
-    );
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+  
+  }
     
+  render() {
+    /* WebRouter*/
+    return( 
+      <div>
+          <WebRouter />
+      </div>
+    );
+  }
 }
+  
 
-export default App;
+const appDiv = document.getElementById("app");
+render(<App />, appDiv);
